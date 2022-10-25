@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+
+
+
+/*Deaclaracion de variables*/
+:root {
+    /*Variables para la paleta de colores */
+    --color-blanco:#fff;
+    --color-negro:#000;
+    --color-azul:#3079d9;
+    --color-grisoscuro:#454545;
+    --color-celesteclaro:#D0DFF2;
+
+    /* Variables para las fuentes externas*/
+    --fuente-principal:'Poppins', sans-serif;
+    --fuente-h3 :'Open Sans', sans-serif;
+    --fuente-titulos:xxxxxxx;
+    --fuente-subtitulos:yyyyyyy;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--fuente-principal);
+}
+ section{
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+ }
+
+ h1  {
+    font-size: 48px; /* cambiar el tamaño de la fuente*/
+    font-weight: 700; /* grosor de la fuente*/
+    letter-spacing: 8px;  /* Espacio entre caracteres*/
+    color: var(--color-blanco);
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+h3 {
+    
+    
+    padding-bottom: 5px;  
+    font-size: 24px; /*Tamaño de fuente o letra*/
+    font-weight: 600;/* Grosor de letra o fuente*/
+    margin-bottom: 5px; /*espaciado inferior*/
+    text-align: center;
+    font-family:var(--fuente-h3);
+    font-weight: 600;
+    padding-bottom: 20px;
+    
+    
+  }
+
+p{ 
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size:20px;
+    color: var(--color-celesteclaro);
+    
+    
+    
+}
+
+
+#cabecera h1 {
+    padding-bottom: 30px;
+}
+
+#cabecera {
+    
+    background-color:var(--color-blanco);  /* Color de fondo*/
+    color: var(--color-azul) ; /* Color de texto*/
+   /*text-shadow: 3px 3px 2px rgba(0,0,0,0.66);*/ 
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#nosotros {
+    background-image: url("../img/img1.jpg");
+    background-repeat: no-repeat; /* Para que no se repita la imagen*/
+    background-size: cover;   /* agranda la foto o achica */
+    /*/background-position: bottom;* /* para ver la imagen mas abajo*/
+    background-position: center right; /*Para centra la imagen*/
+    height: 500px;
+}
+
+#about{
+
+    color: var(--color-blanco);
+}
+
+#set{
+   background-color: var(--color-azul);
+   text-align: left;
+   font-family: var(--fuente-h3);
+}
+#our-service{
+   text-align: center;
+}
+
+
+
+.espaciado {
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.contenedor{
+    max-width: 80%;
+    margin-left: auto;/*Estilos para centrar el contenedor*/
+    margin-right: auto;
+ }
+ .boton{
+     margin-top: 50px;
+     width: 200px;
+     height: 60px;
+     border-radius: 104px 104px 104px 104px;
+     background: #8BC34A;
+     color: var(--color-blanco);
+     font-size: 15px;
+     font-family: var(--fuente-principal);
+     border: none;
+     cursor: pointer;
+ }
+ .boton1{
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    border-radius: 104px 104px 104px 104px;
+    background: #1565c0;
+    color: var(--color-blanco);
+    font-size: 15px;
+    font-family: var(--fuente-principal);
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+ }
+ .p{
+     color: var(--color-negro);
+     padding-bottom: 30px;
+     text-align: justify;
+     
+ }
+ .img_ajustarancho{
+    width: 33%;
+    height: auto;
+    padding-bottom: 30px;
+    margin-left: 130px;
+    position: center;
+
+
+   
+    
+}
+
+.columna {
+    flex-basis: 0px;/* Quita el hancho de las columnas*/
+    flex-grow: 1;/* Agranda el hancho de la columna en proporcion al numero de columnas exixtentes*/
+    
+    
+    /*Espaciado izquierdpo entre la columna y el contenedor*/
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+.columna-50 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.fila {
+    display: flex;/* Activa flexbox*/
+    flex-direction: row; /* Coloca los elementos hijo 1 al lado del otro como una fila*/
+     
+    
+    /* anular el paddingn izquierdo y derecho de la primera y ultima columna */
+    margin-left: -15px;
+    margin-right: -15px;
+   }
+.letra{
+    color: var(--color-negro);
+    text-align: center ;
+    padding-bottom: 20px;
+  
+    
+   }
+
+   .derecha{
+    padding-top: 20px;
+    padding-bottom: 20px;;
+   }
+
+   .dere{
+       text-align: left;
+   }
+  
+   .izquierda{
+    text-align: left;
+    color: var(--color-negro);
+   }
+   .img_ajustarancho1{
+    width: 33%;
+    height: auto;
+    padding-bottom: 30px;
+    box-shadow: 2px 2px 5px #999;
+   }
+   .center{
+       margin-left: 20%;
+   }
+
+
